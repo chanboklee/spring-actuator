@@ -19,3 +19,7 @@ info:
   app:
     name: spring-actuator
     company: lcb
+
+logging:
+  level:
+    com.lee.actuator: debug
