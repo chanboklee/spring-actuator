@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class OrderController {
 
-    private OrderService orderService;
+    private final OrderService orderService;
 
     @GetMapping("/order")
     public String order(){
