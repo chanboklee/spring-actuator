@@ -1,5 +1,7 @@
 package com.lee.actuator;
 
+import com.lee.actuator.order.gauge.StockConfigV1;
+import com.lee.actuator.order.gauge.StockConfigV2;
 import com.lee.actuator.order.v0.OrderServiceV0;
 import com.lee.actuator.order.v1.OrderServiceV1;
 import com.lee.actuator.order.v2.OrderServiceV2;
@@ -15,7 +17,8 @@ import org.springframework.context.annotation.Import;
 // @Import(OrderServiceV1.class)
 // @Import(OrderServiceV2.class)
 // @Import(OrderServiceV3.class)
-@Import(OrderServiceV4.class)
+// @Import({OrderServiceV4.class, StockConfigV1.class})
+@Import({OrderServiceV4.class, StockConfigV2.class})
 @SpringBootApplication(scanBasePackages = "com.lee.actuator.controller")
 public class ActuatorApplication {
 
